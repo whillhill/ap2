@@ -1,0 +1,17 @@
+# Minimal Ruff config, adapted from AP2-main
+line-length = 100
+indent-width = 4
+target-version = "py310"
+
+[lint]
+ignore = [
+    "D100",
+    "D104",
+]
+select = ["E", "W", "F", "I", "UP", "B", "C4", "RUF"]
+
+[format]
+quote-style = "single"
+indent-style = "space"
+docstring-code-format = true
+

@@ -1,0 +1,24 @@
+# Include top-level essentials
+include LICENSE
+include README.md
+
+# Package contents: only src/ap2
+recursive-include src/ap2 *
+
+# Prune non-package directories from sdist
+prune examples
+prune docs_ap2
+prune AP2-main
+prune scripts
+prune samples
+prune .github
+prune .mkdocs
+prune .vscode
+
+# Exclude common noise
+global-exclude __pycache__
+global-exclude *.py[cod]
+global-exclude *.so
+global-exclude *.dylib
+global-exclude .DS_Store
+
